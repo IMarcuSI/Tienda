@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.cart-items {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.cart-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.cart-summary {
+    width: 250px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Estilos para botones */
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0; /* Posición en la esquina superior derecha */
+    width: 50%; /* Ocupa el 50% del ancho del viewport */
+    height: 100%; /* Ocupa todo el alto del viewport */
+    max-width: 500px; /* Tamaño máximo para la ventana del carro */
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease; /* Transición suave cuando se abre y se cierra */
+    z-index: 999; /* Asegura que esté por encima del resto del contenido */
+}
+
+.close-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.close-btn:hover {
+    color: #555; /* Cambia el color al pasar el ratón sobre el botón */
+}
+
+@media (max-width: 768px) {
+    .cart {
+        width: 100%;
+        max-width: none;
+    }
+
+}

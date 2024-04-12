@@ -1,0 +1,145 @@
+/*Generales*/
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    margin: 0 auto;
+    font-family: sans-serif; 
+    color: #333;
+    text-align: center;
+}
+
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos al extremo derecho */
+    align-items: center; /* Alinea verticalmente los elementos */
+    margin-right: 30px; /* Aumenta el margen derecho para dar espacio a las imágenes */
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a img {
+    height: 40px;
+    margin-left: 10px; /* Agrega un margen izquierdo para separar las imágenes */
+}
+
+.navbar a img {
+    filter: invert(100%);
+}
+
+.navbar a:hover {
+    background: blanchedalmond;
+}
+
+.logo img {
+    height: 60px;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+/*header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+
+/*main*/
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 25px; /* Tamaño de fuente más grande */
+}
+
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.20);
+}
+
+
+.item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-producto{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}

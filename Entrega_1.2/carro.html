@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <div class="cart">
+        <header>
+            <h1>Carrito de Compras</h1>
+        </header>
+        
+        <main>
+            <div class="cart-items">
+
+                <div class="cart-item">
+                    <img src="img/hombre1.png" alt="Producto 1">
+                    <h2>Nombre del Producto 1</h2>
+                    <p>Precio: $0</p>
+                    <button>Eliminar</button>
+                </div>
+                <div class="cart-item">
+                    <img src="img/mujer1.jpg" alt="Producto 2">
+                    <h2>Nombre del Producto 2</h2>
+                    <p>Precio: $0</p>
+                    <button>Eliminar</button>
+                </div>
+
+            </div>
+
+            <div class="cart-summary">
+                <h2>Resumen del Carrito</h2>
+                <p>Total: $0</p>
+                <button onclick="window.location.href = 'index.html';">Realizar Pago</button>
+            </div>
+        </main>
+
+        <button id="close-cart" class="close-btn" onclick="window.location.href = 'index.html';">×</button>
+        
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
